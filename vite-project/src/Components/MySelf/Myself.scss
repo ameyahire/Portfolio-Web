@@ -1,0 +1,184 @@
+.myself {
+  padding: 30px;
+
+  .progress {
+    position: sticky;
+    top: 0;
+    // background: rgba(12, 12, 29, 0.15);
+    padding: 12px;
+    text-align: center;
+
+      background-color: #0c0c1d19;    
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border: 1px solid rgba(17, 5, 79, 0.3);
+      z-index: 3;
+
+
+    h2 {
+      font-size: 36px;
+      color: orange;
+    }
+
+    .progressBar {
+      height: 5px;
+      background: white;
+      margin-top: 8px;
+    }
+  }
+
+  .section {
+    margin-bottom: 40px;
+    overflow: hidden;
+
+    h2 {
+      font-size: 30px;
+      color: white;
+      border-bottom: 2px solid #ff4141;
+      padding-bottom: 6px;
+      margin-bottom: 10px;
+    }
+
+    p, li {
+      font-size: 18px;
+      color: #ddd;
+      line-height: 1.6;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+.skillsGrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  align-items: start;
+  justify-content: flex-start;
+  padding: 12px 0;
+
+  li {
+    display: inline-block;
+    background-color: #333;
+    padding: 5px 15px;
+    font-size: 17px;
+    border-radius: 30px;
+    color: white;
+    font-weight: 500;
+    white-space: nowrap; // prevents breaking into multiple lines
+    width: fit-content; // 👈 key part: shrink to content width
+    transition: transform 0.2s ease;
+
+    &:hover {
+      transform: scale(1.05);
+      cursor: default;
+    }
+  }
+
+  .mern{
+    background-color: #c13939;
+      &:hover {
+      box-shadow: 0px 0px 15px #c13939d8;
+          
+    }
+  }
+  .uiux{
+    background-color: #1f7f70;
+      &:hover {
+      box-shadow: 0px 0px 15px #1f7f70;
+          
+    }
+  }
+  .data{
+    background-color: #8d59dc;
+      &:hover {
+      box-shadow: 0px 0px 15px #8d59dc;
+          
+    }
+  }
+  .figma{
+    background-color: #d329a6;
+       &:hover {
+      box-shadow: 0px 0px 15px #d329a6;
+          
+    }
+  }
+  .excel{
+    background-color: #29b737;
+      &:hover {
+      box-shadow: 0px 0px 15px #29b737;
+          
+    }
+  }
+  .powerbi{
+    background-color: #cb7228;
+      &:hover {
+      box-shadow: 0px 0px 15px #cb7228;
+          
+    }
+  }
+  .pandas{
+    background-color: #3c3ab4;
+      &:hover {
+      box-shadow: 0px 0px 15px #3c3ab4;
+          
+    }
+  }
+  .numpy{
+    background-color: #c15e36;
+      &:hover {
+      box-shadow: 0px 0px 15px #c15e36;
+          
+    }
+  }
+  .sql{
+    background-color: #4a29b7;
+      &:hover {
+      box-shadow: 0px 0px 15px #4a29b7;
+          
+    }
+  }
+  .photoshop{
+    background-color: rgb(72, 136, 255);
+      &:hover {
+      box-shadow: 0px 0px 15px rgb(72, 136, 255);
+          
+    }
+  }
+  .canva{
+    background-color: rgb(72, 209, 255);
+      &:hover {
+      box-shadow: 0px 0px 15px rgb(72, 209, 255);
+    }
+  }
+}
+
+
+    .dropdownItem {
+      margin-top: 12px;
+    
+      button {
+        background: rgb(255, 255, 255);;
+        color: #000000;
+        padding: 10px;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        width: 100%;
+        text-align: left;
+      }
+    
+      p {
+        margin-top: 6px;
+        padding: 12px 16px;
+        background-color: #222;
+        border-left: 4px solid orange; // 🔶 Highlighted accent
+        border-radius: 5px;
+        color: #ddd;
+        line-height: 1.6;
+      }
+    }
+  }
+}

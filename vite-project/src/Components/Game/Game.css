@@ -1,0 +1,81 @@
+.game-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #282c34;
+  color: white;
+}
+
+.game-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: calc(340px + 20px); /* Board width + padding */
+  margin-bottom: 20px;
+}
+
+.go-back-btn {
+  background-color: #61dafb;
+  color: #282c34;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(20, 1fr);
+  grid-template-rows: repeat(20, 1fr);
+  width: 340px; /* 20 cells * 17px */
+  height: 340px; /* 20 cells * 17px */
+  border: 5px solid #61dafb;
+}
+
+.cell {
+  background-color: #333;
+  width: 17px;
+  height: 17px;
+}
+
+.snake {
+  background-color: #4CAF50;
+}
+
+.food {
+  background-color: #f44336;
+}
+
+.score {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.game-over {
+  text-align: center;
+}
+
+.game-over h2 {
+  color: #f44336;
+  font-size: 48px;
+}
+
+.game-over p {
+  font-size: 24px;
+}
+
+.game-over button {
+  background-color: #61dafb;
+  color: #282c34;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 10px;
+}

@@ -1,0 +1,149 @@
+@import "../../styles/mixins";
+
+.hero {
+  display: flex;
+  height: calc(100vh - 100px);
+  overflow: hidden;
+  background: linear-gradient(180deg, #0c0c1d, #150617);
+  position: relative;
+
+  // Left side: Text content
+  .wrapper {
+    flex: 1;
+    height: 100%;
+    padding-left: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 18px;
+
+    @include mobile{
+      justify-content: flex-end;
+      // width: 100%;
+      flex: none;
+    }
+
+    .textContainer {
+      width: 100%;
+      z-index: 2;
+
+    @include mobile{
+      height: 50%;
+    }
+
+      h2 {
+        font-size: 70px;
+        color: #993333;
+
+        @include mobile{
+          font-size: 45px;
+        }
+      }
+
+      h1 {
+        font-size: 60px;
+        color: white;
+
+        @include mobile{
+          font-size: 35px;
+        }
+      }
+    }
+
+    .hero-buttons {
+      display: flex;
+      gap: 20px;
+
+      button {
+        padding: 20px;
+        border-radius: 10px;
+        background-color: transparent;
+        width: 30%;
+        margin-top: 20px;
+        border: 1px solid white;
+        color: white;
+        cursor: pointer;
+        font-weight: 300;
+        transition: all 0.2s ease-in-out;
+
+        @include mobile{
+          font-size: 14px;
+          width: 40%;
+        }
+
+        &:hover {
+          background-color: rgb(255, 65, 65);
+          color: #0c0c1d;
+          border: 1px solid black;
+          font-weight: 400;
+        }
+      }
+    }
+
+    .slidingTextContainer {
+      position: absolute;
+      font-size: 30vh;
+      bottom: -63px;
+      white-space: nowrap;
+      color: #ffffff09;
+      width: 144%;
+      font-weight: bold;
+      overflow: hidden;
+    }
+  }
+
+  // Right side: Image
+  .imageContainer {
+    flex: 0.6;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 40px;
+
+    img {
+      height: 130vh;
+      width: auto;
+
+      @include mobile{
+        position: absolute;
+        height: 63vh;
+        right: 2%;
+        bottom: 37%;
+      }
+    }
+  }
+
+  // Optional decorative logo box (if used)
+  .logo-box {
+    position: absolute;
+    left: 20%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50%;
+    height: 85%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 0;
+    background-color: transparent;
+
+    .logo-icon {
+      font-size: 80px;
+      opacity: 0.6;
+      transition: transform 0.3s ease;
+      animation: popIn 0.4s ease;
+    }
+  }
+
+  @keyframes popIn {
+    0% {
+      transform: scale(0.8);
+      opacity: 0;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 0.6;
+    }
+  }
+}

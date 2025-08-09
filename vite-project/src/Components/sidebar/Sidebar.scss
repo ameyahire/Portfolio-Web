@@ -1,0 +1,60 @@
+@import "../../styles/mixins";
+
+.sidebar{
+display: flex;
+flex-direction: column;
+align-items: center;
+background-color: white;
+color: black;
+position: fixed; /* Add this line */
+  top: 0; /* Add this line */
+  left: 0; /* Add this line */
+  height: 100%;
+  width: 20%; /* Add this line to make it full height */
+  z-index: 4;
+
+    .bg{
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        width: 400px;
+        background: white;
+        
+        @include mobile{
+           width: 195px;
+        }
+
+        .links{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        .links a{
+            color: black;
+            font-weight: 500;
+            font-size: 25px;
+        }
+
+    }
+}
+
+.toggle-btn{
+    width:6% !important; 
+    // height: 50px;
+    border-radius: 50%;
+    position: fixed;
+    top: 22px;
+    left: 16px;
+    background-color: transparent !important;
+    border: none;
+}
+
